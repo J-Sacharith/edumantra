@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="tlc4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .year-semester {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="image-section">
+            <img class="login-image" src="i2.jpeg" alt="Login Illustration">
+            <img class="logo" src="2.png" alt="Logo">
+        </div>
+        <div class="form-section">      
+            <div class="form-wrapper">
+                <img src="avatar.svg" width="100px">
+                <h2>Create an Account</h2>
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <input type="email" name="email" placeholder="Email Address">
+                <input type="text" name="college" placeholder="College Name">
+                <select name="course" >
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="CSE">CSE</option>
+                    <option value="CSM">CSM</option>
+                    <option value="IT">IT</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ECE">ECE</option>
+                </select>
+                <div class="year-semester">
+                    <select name="year">
+                        <option value="" disabled selected>Select Year</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <select name="semester">
+                        <option value="" disabled selected>Select Semester</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <button class="btnn">Sign Up</button>
+                <p class="liw">Already have an account? <a href="login.html" class="link">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

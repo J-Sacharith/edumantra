@@ -1,0 +1,158 @@
+body {
+    
+    font-family: 'Poppins', sans-serif;
+    background: url('b4.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    height: 800px; 
+    overflow-y: scroll;
+}
+
+.login-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 80px ; /* Add margin to separate from background */
+    padding: 20px;
+     
+}
+
+.img{
+	display: flex;
+    position: relative;
+	justify-content: flex-end;
+	align-items: center;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: fill;
+}
+
+.image-section {
+    flex: 0 0 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section .login-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-section .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Add vertical scrollbar */
+}
+
+.form-wrapper {
+    width: 80%;
+    text-align: center;
+}
+
+.form-wrapper h2 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-wrapper input,
+.form-wrapper select {
+    width: calc(100% - 20px);
+    height: 35px;
+    margin: 10px 0;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #38d39f;
+    font-size: 16px;
+    color: black;
+}
+
+.form-wrapper input:focus,
+.form-wrapper select:focus {
+    outline: none;
+}
+
+.form-wrapper .btnn {
+    width: 100%;
+    height: 40px;
+    background: #38d39f;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-wrapper .btnn:hover {
+    background: white;
+    color: #38d39f;
+    border: 2px solid #38d39f;
+}
+
+.form-wrapper .link {
+    margin: 15px 0;
+    color: #38d39f;
+}
+
+.form-wrapper .link a {
+    text-decoration: none;
+    color: #38d39f;
+}
+
+.form-wrapper .liw {
+    margin: 15px 0;
+}
+
+.form-wrapper .icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.form-wrapper .icons a:hover {
+    color: #38d39f;
+}
+
+.year-semester select {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .image-section, .form-section {
+        width: 100%;
+    }
+
+    .form-wrapper {
+        width: 90%;
+    }
+}
